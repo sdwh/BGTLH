@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>BGTLH</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <h1 class="shoutbingo">All you have to do is Shout out : BINGO </h1>
+            </div>
+            <div class="col-sm-12">
+                <p class="leatestNumber">最新唱號：<span id="leatestNumber"></span>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modelId">
+                        歷史唱號 (<span id="numCount">0</span>)
+                    </button>
+                </p>
+                <p id="doitnow" class="text-white">
+                    
+                </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <table class="allTable table table-bordered">
+                    <thead>
+                        <tr class="text-center">
+                            <th class="bg-danger text-white" style="width:13%;">
+                                卡號
+                            </th>
+                            <th class="bg_chrismasGold" style="width: 14%;">
+                                交叉
+                            </th>
+                            <th class="bg_chrismasGold" style="width: 14%;">
+                                雙十
+                            </th>
+                            <th class="bg_chrismasGold" style="width: 14%;">
+                                井字
+                            </th>
+                            <th class="bg_chrismasGold" style="width: 14%;">
+                                日字
+                            </th>
+                            <th class="bg_chrismasGold" style="width: 14%;">
+                                梅花
+                            </th>
+                            <th class="bg_chrismasGold" style="width: 14%;">
+                                全滿
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-append">
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div> <!-- end of container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">歷史唱號</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body" id="historyNum">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script id="table-template" type="text/x-handlebars-template">
+        <tr class="text-white text-center" style="font-size: 1.6rem">
+            <!-- <td><a href="card.html?id={{id}}">{{id}}</a>, {{name}}</td> -->
+            <td><a href="card.html?id={{id}}">{{id}}</a></td>
+            <td>{{cross}}</td>
+            <td>{{doubleTen}}</td>
+            <td>{{poundSign}}</td>
+            <td>{{daySign}}</td>
+            <td>{{plum}}</td>
+            <td>{{full}}</td>
+        </tr>
+    </script>
+    <div id="output"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js" integrity="sha256-VeNaFBVDhoX3H+gJ37DpT/nTuZTdjYro9yBruHjVmoQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.5.3/handlebars.min.js" integrity="sha256-GwjGuGudzIwyNtTEBZuBYYPDvNlSMSKEDwECr6x6H9c=" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src="./datas.js?v=12"></script>
+    <script src="./load.js?v=12"></script>
+    <script src="./app.js?v=12"></script>
+</body>
+
+</html>
