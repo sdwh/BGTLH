@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>BGTLH</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row mt-3">
+            <div class="col-sm-12 text-center">
+                <a href="index.html" class="btn btn-primary">總管理頁</a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 text-center">
+                <table class="bingo-table">
+                    <tbody class="table-bordered">
+                        <tr id="row_b">
+                            <td id="B0"></td>
+                            <td id="G0"></td>
+                            <td id="T0"></td>
+                            <td id="L0"></td>
+                            <td id="H0"></td>
+                        </tr>
+                        <tr id="row_1">
+                            <td id="B1"></td>
+                            <td id="G1"></td>
+                            <td id="T1"></td>
+                            <td id="L1"></td>
+                            <td id="H1"></td>
+                        </tr>
+                        <tr id="row_2">
+                            <td id="B2"></td>
+                            <td id="G2"></td>
+                            <td id="T2"></td>
+                            <td id="L2"></td>
+                            <td id="H2"></td>
+                        </tr>
+                        <tr id="row_3">
+                            <td id="B3"></td>
+                            <td id="G3"></td>
+                            <td id="T3"></td>
+                            <td id="L3"></td>
+                            <td id="H3"></td>
+                        </tr>
+                        <tr id="row_4">
+                            <td id="B4"></td>
+                            <td id="G4"></td>
+                            <td id="T4"></td>
+                            <td id="L4"></td>
+                            <td id="H4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        盤勢分析
+                    </div>
+                    <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-2 text-center">
+                                    <span class="badge badge-primary">交叉</span>
+                                </div>
+                                <div class="col-sm-10">
+                                    <p id="analy_cross"></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-2 text-center">
+                                    <span class="badge badge-primary">雙十</span>
+                                </div>
+                                <div class="col-sm-10">
+                                    <p id="analy_doubleTen"></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-2 text-center">
+                                    <span class="badge badge-primary">井字</span>
+                                </div>
+                                <div class="col-sm-10">
+                                    <p id="analy_poundSign"></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-2 text-center">
+                                    <span class="badge badge-primary">日字</span>
+                                </div>
+                                <div class="col-sm-10">
+                                    <p id="analy_daySign"></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-2 text-center">
+                                    <span class="badge badge-primary">梅花</span>
+                                </div>
+                                <div class="col-sm-10">
+                                    <p id="analy_plum"></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-2 text-center">
+                                    <span class="badge badge-primary">全滿</span>
+                                </div>
+                                <div class="col-sm-10">
+                                    <p id="analy_full"></p>
+                                </div>
+                            </div>
+                            <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js" integrity="sha256-VeNaFBVDhoX3H+gJ37DpT/nTuZTdjYro9yBruHjVmoQ=" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src="./datas.js"></script>
+    <script src="./load.js"></script>
+    <script src="./card.js"></script>
+</body>
+
+</html>

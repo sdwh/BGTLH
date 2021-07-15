@@ -1,0 +1,100 @@
+/*
+#146B3A
+#F8B229
+#BB2528
+*/
+
+.leatestNumber{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.bg_chrismasGold{
+    background-color: #F8B229;
+    color: brown;
+    
+}
+
+h1.shoutbingo{
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+body{
+    background-color: #146B3A;
+    font-family: Helvetica, sans-serif, "微軟正黑體";
+}
+
+.bingo-table td{
+    color: #EA4630;
+    height: 60px;
+    width: 60px;
+    font-size: 2.3rem;
+}
+
+.allTable td, .allTable th{
+    font-size: 1.1rem;
+    padding: 0px;
+    font-weight: 700;
+}
+
+@media (min-width: 680px){
+    .bingo-table td{
+        height: 125px;
+        width: 125px;
+        font-size: 5rem;
+    }
+    .allTable td, .allTable th{
+        font-size: 1.4rem;
+        padding: 0.5rem;
+    }
+}
+
+.small td{
+    height: 30px;
+    width: 30px;
+    font-size: 1rem;
+}
+
+.table-bordered td, .table-bordered th{
+    border: 2px solid #fff;
+}
+
+.bingo-table .table-bordered td{
+    border: 3px solid #F8B229;
+}
+
+.bingo-table{
+    display: inline;
+}
+
+.circle{
+    background-color: #BB2528;
+    color: white !important;
+}
+
+.badge{
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+td a{
+    color: white;
+}
+td a:hover{
+    color: #F8B229;
+}
+
+
+.bingoIt{
+    background-color: #dc3545;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
